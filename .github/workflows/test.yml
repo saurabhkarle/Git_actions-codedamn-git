@@ -1,13 +1,14 @@
-<<<<<<< HEAD
-Hi all
-cd ..
-=======
 name: My First Github Action
 on: [push]
 jobs: 
-    print-hello-world:
+    print-hello-world1:
         runs-on: ubuntu-latest
         steps:
+<<<<<<< HEAD
             - run: echo "hello world!!!"
-            - run: ehco "this is step no. 2"
+            - run: echo "this is step no 2"
+=======
+            - uses: actions/checkout@v2
+            - run: tree
+
 >>>>>>> new job 1
