@@ -1,15 +1,17 @@
 name: My First Github Action
 on: [push]
 jobs: 
-    print-hello-world:
+    My-code:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
             - uses: actions/setup-node@v2
-                with:
-                    mode-version: '14.17.0'
+              with:
+                node-version: '14.17.0'
+            - name: Install node_modules
+              run: yarn
             - name: Build the project
-                run: yarn build
+              run: yarn build
             - name: Setup finish
-                run: echo "Yay"
+              run: echo "Yay"
 
