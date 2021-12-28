@@ -8,5 +8,8 @@ jobs:
             - uses: actions/setup-node@v2
                 with:
                     mode-version: '14.17.0'
-            - run: node -v
+            - name: Build the project
+                run: yarn build
+            - name: Setup finish
+                run: echo "Yay"
 
