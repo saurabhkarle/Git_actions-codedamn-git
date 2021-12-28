@@ -5,4 +5,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - run: echo "hello world!!!"
-            - run: ehco "this is step no 2"
+            - run: echo "this is step no 2"
